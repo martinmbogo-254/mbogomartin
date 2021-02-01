@@ -1,0 +1,169 @@
+{% extends 'folio/base.html' %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+
+</head>
+
+<body>
+    {% load static%} {% block content %}
+
+
+    <body>
+        <div class="container-fluid">
+            <!-- hero section starts here -->
+            <div class="" id="hero">
+                <div class="row text-center bg-light">
+                    <div class="col-md-6 mt-5 text-center " id="profile">
+                        <h4 class="text-center m-3 p-3 text-custom  mt-5"> MBOGO MBURU</h4>
+                        <P class=>WEB , SOFTWARE DEVELOPER AND DATA SCIENTIST</P>
+
+                        <div class="">
+                            <ul class="navbar-nav m-2 p-3 d-inline">
+                                <li class="nav-item ">
+                                    <a href=""><i class="fa fa-github text-custom " style="font-size: 28px;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href=""> <i class="fa fa-facebook text-custom " style="font-size: 28px;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href=""> <i class="fa fa-twitter text-custom" style="font-size: 28px;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href=""><i class="fa fa-instagram text-custom " style="font-size: 28px;"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class=" btn-custom"> Contact</button>
+                    </div>
+                    <div class="col-md-5 mt-3 bg-custom text-light  " id="hero-about">
+                        <h4 class="hero-title m-3 p-3">ABOUT ME</h4>
+                        <h5 class="p-3 m-3">Hi, <span class="text-warning">Am Mbogo Martin</span></h5>
+                        <p class="text-left p-2">My name is Mbogo Mburu Martin a web developer , python enthusiast and data scientist in making. <br>My main focus in web development being frontend web design and also backend development a field i have grown to fancy , in short
+                            i would describe myself as a full stack developer.<br> Being a python enthusiast i have recently decided to dive into machine learning & Artificial Intelligence and am currently loving the lessons am getting to learn.
+                            <br>Am a tech visionary and currently a student at <span class="text-warning">  THE TECHNICAL UNIVERSITY OF KENYA.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- skills section starts here -->
+            <section id="skills" class="">
+                <div class=" container text-center  ">
+                    <h3 class="text-center text-custom mt-5 ">SKILLS</h3>
+                    <div class="row  ">
+                        <div class="col-md-3 ">
+                            <a class="nav-link " href="datamanagement.html ">
+                                <div class="card shadow  bg-custom">
+                                    <img src="../images/frontend.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    <div class="card-body  bg-light ">
+                                        <h5 class="m-2 text-custom ">FRONTEND DEVELOPMENT</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a class="nav-link " href="datamanagement.html ">
+                                <div class="card  bg-custom shadow ">
+                                    <img src="../images/backend.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    <div class="card-body bg-light">
+                                        <h5 class="m-2 text-custom ">BACKEND DEVELOPMENT</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="nav-link " href="datamanagement.html ">
+                                <div class="card   bg-custom shadow ">
+                                    <img src="../images/machinelearning.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    <div class="card-body  bg-light ">
+                                        <h5 class="m-2 text-custom ">PYTHON MACHINE LEARNING</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a class="nav-link " href="datamanagement.html ">
+                                <div class="card bg-custom shadow ">
+                                    <img src="../images/images (2).jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    <div class="card-body  bg-light ">
+                                        <h5 class="m-2  text-custom">DATA VISUALIZATION</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- tecnology and languages learnt starts here -->
+            <section class="bg-light " id="dets">
+                <div class="languages bg-light container container">
+                    <div class="section-title ">
+                        <div class="row">
+                            <div class="col-md-5 m-2 p-2 bg-custom shadow text-light" id="languages">
+                                <h3 class="title text-center text-warning">languages</h3>
+                                <p class="m-3">These are some of the languages, frameworks and technologies that i have worked with.</p>
+                                <ul>
+                                    <li>Angular Js</li>
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>Python</li>
+                                    <li>Javascript</li>
+                                    <li>Tensorflow</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5 p-2 m-2 text-center">
+                                <h3 class="title text-warning text-center">Personal Details</h3>
+                                <h5>Name</h5><span class="text-info">Martin Mbogo</span>
+                                <h5>Email</h5><span class="text-info"> mbogomartin25@gmail.com</span>
+                                <h5>Phone</h5><span class="text-info">0745499838</span>
+                                <h5>Nationality</h5><span class="text-info">Kenyan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- projects section starts here -->
+            <section class="projects mt-4 " id="projects">
+                <div class="projects container">
+                    <h5 class="text-center text-custom font-weight-bold"> PROJECTS
+
+                    </h5>
+
+                    <table class="table m-2 p-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Technologies</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"> Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for project in projects%}
+                            <tr>
+                                <th scope="row" id="title">{{project.name}} </th>
+                                <td id="description">{{project.description}}</td>
+                                <td id="technologies">{{project.technology}}</td>
+                                <td id="status">{{project.status}}</td>
+                                <td id="link"> {{project.source}}</td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="bg-custom text-light">
+                <div class="footer  text-center m-3 p-2">&copy; 2021 . ALL RIGHTS RESERVED</div>
+            </section>
+    </body>
+    {%endblock content%}
+    </div>
+</body>
+
+</html>
