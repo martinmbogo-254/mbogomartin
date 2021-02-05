@@ -64,14 +64,8 @@ html {
     border-radius: 10px;
 }
 
-.title::after {
-    content: '';
-    background: #676775;
-    height: 2px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+#dets {
+    height: 400px;
 }
 
 #profile h4 {
