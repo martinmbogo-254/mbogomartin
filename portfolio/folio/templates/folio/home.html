@@ -41,7 +41,7 @@
                     <div class="col-md-5 mt-3 bg-custom text-light  " id="hero-about">
                         <h4 class="hero-title m-3 p-3">ABOUT ME</h4>
                         <h5 class="p-3 m-3">Hi, <span class="text-warning">Am Mbogo Martin</span></h5>
-                        <p class="text-left p-2">My name is Mbogo Mburu Martin a web developer , python enthusiast and data scientist in making. <br>My main focus in web development being frontend web design and also backend development a field i have grown to fancy , in short
+                        <p class="text-left p-3">My name is Mbogo Mburu Martin a web developer , python enthusiast and data scientist in making. <br>My main focus in web development being frontend web design and also backend development a field i have grown to fancy , in short
                             i would describe myself as a full stack developer.<br> Being a python enthusiast i have recently decided to dive into machine learning & Artificial Intelligence and am currently loving the lessons am getting to learn.
                             <br>Am a tech visionary and currently a student at <span class="text-warning">  THE TECHNICAL UNIVERSITY OF KENYA.</span>
                         </p>
@@ -58,7 +58,8 @@
                         <div class="col-md-3 ">
                             <a class="nav-link " href="datamanagement.html ">
                                 <div class="card shadow  bg-custom">
-                                    <img src="../images/frontend.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    {% load static%}
+                                    <img src="{% static 'folio\images\frontend-development-concept-website-interface-design-improvement-programming-coding-profession-isolated-flat-vector-190543907.jpg'%}" class="card-img " height="150px; " width="100% " alt=" ">
                                     <div class="card-body  bg-light ">
                                         <h5 class="m-2 text-custom ">FRONTEND DEVELOPMENT</h5>
                                     </div>
@@ -68,7 +69,8 @@
                         <div class="col-md-3 ">
                             <a class="nav-link " href="datamanagement.html ">
                                 <div class="card  bg-custom shadow ">
-                                    <img src="../images/backend.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    {% load static%}
+                                    <img src="{% static 'folio\images\Backend-Developers.webp'%}" class="card-img " height="150px; " width="100% " alt=" ">
                                     <div class="card-body bg-light">
                                         <h5 class="m-2 text-custom ">BACKEND DEVELOPMENT</h5>
                                     </div>
@@ -78,9 +80,10 @@
                         <div class="col-md-3">
                             <a class="nav-link " href="datamanagement.html ">
                                 <div class="card   bg-custom shadow ">
-                                    <img src="../images/machinelearning.jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    {% load static%}
+                                    <img src="{% static 'folio\images\istockphoto-962219860-612x612.jpg' %}" class="card-img " height="150px; " width="100% " alt=" ">
                                     <div class="card-body  bg-light ">
-                                        <h5 class="m-2 text-custom ">PYTHON MACHINE LEARNING</h5>
+                                        <h5 class="m-2 text-custom "> MACHINE LEARNING</h5>
                                     </div>
                                 </div>
                             </a>
@@ -88,7 +91,8 @@
                         <div class="col-md-3 ">
                             <a class="nav-link " href="datamanagement.html ">
                                 <div class="card bg-custom shadow ">
-                                    <img src="../images/images (2).jpg" class="card-img " height="150px; " width="100% " alt=" ">
+                                    {% load static%}
+                                    <img src="{% static 'folio\images\datavisualization.png' %}" class="card-img " height="150px; " width="100% " alt=" ">
                                     <div class="card-body  bg-light ">
                                         <h5 class="m-2  text-custom">DATA VISUALIZATION</h5>
                                     </div>
@@ -152,7 +156,9 @@
                                 <td id="description">{{project.description}}</td>
                                 <td id="technologies">{{project.technology}}</td>
                                 <td id="status">{{project.status}}</td>
-                                <td id="link"> {{project.source}}</td>
+                                <td id="link">
+                                    <a href="{{project.source}}">{{project.source}}</a>
+                                </td>
                             </tr>
                             {% endfor %}
                             <tr>
