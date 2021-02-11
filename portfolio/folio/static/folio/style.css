@@ -5,6 +5,7 @@ body {
     font-size: 20px;
     line-height: 1.6em;
     text-align: left;
+    font-family: 'roboto', sans-serif;
 }
 
 .bg-custom {
@@ -23,10 +24,12 @@ html {
 
 #hero-about {
     border-radius: 10px;
+    line-height: 30px !important;
 }
 
 .btn-custom {
     width: 150px;
+    text-decoration: none;
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
@@ -35,14 +38,14 @@ html {
 }
 
 #profile {
-    background-image: rgba(0, 0, 0, 0.5) url(../images/SE002.jpg);
+    /* background-image: rgba(0, 0, 0, 0.5) url(../images/SE002.jpg); */
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
 #hero {
-    background-image: rgba(0, 0, 0, 0.5) url(../images/SE002.jpg);
+    /* background-image: rgba(0, 0, 0, 0.5) url(../images/SE002.jpg); */
 }
 
 #hero-img {
@@ -54,6 +57,10 @@ html {
 #skills {
     padding: '';
     height: auto;
+}
+
+#dets {
+    height: inherit;
 }
 
 #skills .row {

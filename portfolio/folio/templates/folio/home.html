@@ -36,14 +36,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class=" btn-custom"> Contact</button>
+                        <a href="#dets"> <button class=" btn-custom"> Contact</button></a>
                     </div>
                     <div class="col-md-5 mt-3 bg-custom text-light  " id="hero-about">
-                        <h4 class="hero-title m-3 p-3">ABOUT ME</h4>
-                        <h5 class="p-3 m-3">Hi, <span class="text-warning">Am Mbogo Martin</span></h5>
+                        <h4 class="hero-title m-3 p-3 mb-3">ABOUT ME</h4>
+                        <h5 class="p-3 m-2">Hi, <span class="text-warning">Am Mbogo Martin</span></h5>
                         <p class="text-left p-3">My name is Mbogo Mburu Martin a web developer , python enthusiast and data scientist in making. <br>My main focus in web development being frontend web design and also backend development a field i have grown to fancy , in short
                             i would describe myself as a full stack developer.<br> Being a python enthusiast i have recently decided to dive into machine learning & Artificial Intelligence and am currently loving the lessons am getting to learn.
-                            <br>Am a tech visionary and currently a student at <span class="text-warning">  THE TECHNICAL UNIVERSITY OF KENYA.</span>
+                            <br>Am a tech visionary and currently a student at <span class="text-warning"><a href="www.tukenya.ac.ke" class="text-warning link">THE TECHNICAL UNIVERSITY OF KENYA.</a>  </span>
                         </p>
                     </div>
                 </div>
@@ -109,55 +109,56 @@
                 <div class="languages bg-light container container">
                     <div class="section-title ">
                         <div class="row">
-                            <div class="col-md-5 m-2 p-2 bg-custom shadow text-light" id="languages">
-                                <h3 class="title text-center text-warning">languages</h3>
+                            <div class="col-md-5 mt-5 mb-3 m-2 p-2 bg-custom shadow text-light" id="languages">
+                                <h3 class="text-center text-warning">languages</h3>
                                 <p class="m-3">These are some of the languages, frameworks and technologies that i have worked with.</p>
                                 <ul>
-                                    <li>Angular Js</li>
+
                                     <li>Python</li>
                                     <li>Django</li>
-                                    <li>Python</li>
                                     <li>Javascript</li>
+                                    <li>Angular Js</li>
+                                    <li>Vue js</li>
                                     <li>Tensorflow</li>
                                 </ul>
                             </div>
-                            <div class="col-md-5 p-2 m-2 text-center">
-                                <h3 class="title text-warning text-center">Personal Details</h3>
-                                <h5>Name</h5><span class="text-info">Martin Mbogo</span>
-                                <h5>Email</h5><span class="text-info"> mbogomartin25@gmail.com</span>
-                                <h5>Phone</h5><span class="text-info">0745499838</span>
-                                <h5>Nationality</h5><span class="text-info">Kenyan</span>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 p-2 m-3 bg-white shadow ">
+                                <h3 class=" text-warning ">Personal Details</h3>
+                                <h5>Name</h5><span class="text-info ml-5">Martin Mbogo</span>
+                                <h5>Email</h5><span class="text-info ml-5"> mbogomartin25@gmail.com</span>
+                                <h5>Phone</h5><span class="text-info ml-5">0745499838</span>
+                                <h5>Nationality</h5><span class="text-info ml-5">Kenyan</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- projects section starts here -->
-            <section class="projects mt-4 " id="projects">
-                <div class="projects container">
+            <section class="projects mt-4 p-4 container" id="projects">
+                <div class="projects container container">
                     <h5 class="text-center text-custom font-weight-bold"> PROJECTS
 
                     </h5>
 
-                    <table class="table m-2 p-2">
+                    <table class="table table-striped table-hover m-3 p-3">
                         <thead>
                             <tr>
                                 <th scope="col">Title</th>
                                 <th scope="col">Description</th>
                                 <th scope="col">Technologies</th>
-                                <th scope="col">Status</th>
+
                                 <th scope="col"> Link</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for project in projects%}
                             <tr>
-                                <th scope="row" id="title">{{project.name}} </th>
+                                <th scope="row" id="title">{{project.name.upper}} </th>
                                 <td id="description">{{project.description}}</td>
-                                <td id="technologies">{{project.technology}}</td>
-                                <td id="status">{{project.status}}</td>
+                                <td id="technologies">{{project.technology.capitalize}}</td>
                                 <td id="link">
-                                    <a href="{{project.source}}">{{project.source}}</a>
+                                    <a href="{{project.source}}">{{project.source.lower}}</a>
                                 </td>
                             </tr>
                             {% endfor %}
@@ -167,7 +168,7 @@
                 </div>
             </section>
             <section class="bg-custom text-light">
-                <div class="footer  text-center m-3 p-2">&copy; 2021 . ALL RIGHTS RESERVED</div>
+                <div class="footer  text-center m-3 p-2">&copy; 2021 . ALL RIGHTS RESERVED .portfolio V1.0</div>
             </section>
     </body>
     {%endblock content%}
